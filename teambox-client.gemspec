@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{teambox-client}
-  s.version = "0.4.0"
+  s.name = "teambox-client"
+  s.version = "0.4.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Pablo Villalba", "James Urquhart"]
-  s.date = %q{2011-05-25}
-  s.description = %q{Provides methods to read and write to Teambox for ruby apps}
-  s.email = %q{pablo@teambox.com}
+  s.date = "2013-07-09"
+  s.description = "Provides methods to read and write to Teambox for ruby apps"
+  s.email = "pablo@teambox.com"
   s.extra_rdoc_files = [
     "README.rdoc"
   ]
@@ -42,22 +42,24 @@ Gem::Specification.new do |s|
     "lib/teambox-client/models/teambox_data.rb",
     "lib/teambox-client/models/upload.rb",
     "lib/teambox-client/models/user.rb",
+    "lib/teambox-client/reference_list.rb",
     "lib/teambox-client/result_set.rb",
     "lib/teambox-client/teambox.rb",
     "lib/teambox-client/teambox_oauth.rb",
     "spec/client_spec.rb",
     "spec/conversation_spec.rb",
     "spec/project_spec.rb",
+    "spec/resource_spec.rb",
     "spec/result_set_spec.rb",
     "spec/spec_helper.rb",
     "spec/task_lists_spec.rb",
     "spec/tasks_spec.rb",
     "teambox-client.gemspec"
   ]
-  s.homepage = %q{http://github.com/teambox/teambox-ruby-client}
+  s.homepage = "http://github.com/teambox/teambox-ruby-client"
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{A ruby gem wrapper for Teambox API}
+  s.rubygems_version = "1.8.24"
+  s.summary = "A ruby gem wrapper for Teambox API"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
@@ -65,16 +67,16 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<httparty>, ["~> 0.7.4"])
       s.add_runtime_dependency(%q<oauth2>, ["~> 0.1.1"])
-      s.add_runtime_dependency(%q<json>, ["~> 1.5.1"])
+      s.add_runtime_dependency(%q<json>, ["~> 1.8.0"])
     else
       s.add_dependency(%q<httparty>, ["~> 0.7.4"])
       s.add_dependency(%q<oauth2>, ["~> 0.1.1"])
-      s.add_dependency(%q<json>, ["~> 1.5.1"])
+      s.add_dependency(%q<json>, ["~> 1.8.0"])
     end
   else
     s.add_dependency(%q<httparty>, ["~> 0.7.4"])
     s.add_dependency(%q<oauth2>, ["~> 0.1.1"])
-    s.add_dependency(%q<json>, ["~> 1.5.1"])
+    s.add_dependency(%q<json>, ["~> 1.8.0"])
   end
 end
 

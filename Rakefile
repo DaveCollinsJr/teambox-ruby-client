@@ -13,7 +13,8 @@ begin
 
     gem.add_dependency("httparty", "~> 0.7.4")
     gem.add_dependency("oauth2", "~> 0.1.1")
-    gem.add_dependency("json", "~> 1.5.1")
+    # 2013-07-09 - Attempting to bump json from ~> 1.5.1
+    gem.add_dependency("json", "~> 1.8.0")
   end
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
@@ -26,7 +27,8 @@ end
 
 task :default => :spec
 
-require 'rake/rdoctask'
+# ERROR: 'rake/rdoctask' is obsolete and no longer supported. Use 'rdoc/task' (available in RDoc 2.4.2+) instead.
+require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
   if File.exist?('VERSION')
     version = File.read('VERSION')
