@@ -1,3 +1,7 @@
+0.4.2 - July 9, 2013
+  * DC attempting to get this working locally:
+  * 2013-07-09 - Attempting to bump httparty from ~> 0.7.4
+  * 2013-07-09 - Attempting to bump oauth2 from ~> 0.1.1
 0.4.1 - July 9, 2013
   * DC attempting to get this working locally with current JSON
 0.4.0 - ??

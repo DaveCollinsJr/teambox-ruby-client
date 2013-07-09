@@ -11,8 +11,10 @@ begin
     gem.homepage    = "http://github.com/teambox/teambox-ruby-client"
     gem.authors     = ["Pablo Villalba", "James Urquhart"]
 
-    gem.add_dependency("httparty", "~> 0.7.4")
-    gem.add_dependency("oauth2", "~> 0.1.1")
+    # 2013-07-09 - Attempting to bump httparty from ~> 0.7.4
+    gem.add_dependency("httparty", "~> 0.10.0")
+    # 2013-07-09 - Attempting to bump oauth2 from ~> 0.1.1
+    gem.add_dependency("oauth2", "~> 0.8.0")
     # 2013-07-09 - Attempting to bump json from ~> 1.5.1
     gem.add_dependency("json", "~> 1.8.0")
   end
